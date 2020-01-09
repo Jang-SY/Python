@@ -14,7 +14,7 @@ class RBM:
             numpy_rd = np.random.RandomState(1234)  # numpy random 객체 생성
         if W == None:
             W = numpy.asarray(
-            numpy_rd.poisson(lam=frequency, size=(n_vis, n_hid)), dtype = float32)  # poisson distribution 에 의한 weight 초기화
+            numpy_rd.poisson(lam=frequency, size=(n_vis, n_hid)), dtype = float)  # poisson distribution 에 의한 weight 초기화
         if v_bias == None:
             v_bias = np.zeros(n_vis)    # v_bias 0으로 초기화
         if h_bias == None:
