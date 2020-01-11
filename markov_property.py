@@ -1,4 +1,5 @@
 import numpy as np
+# Rain, Sunny, Cloudy
 
 P = np.asarray([ [0.5, 0.25, 0.25]
                 ,[0.5, 0,    0.5]
@@ -15,6 +16,6 @@ for i in range(num):
     init_vector2 = np.dot(init_vector2, P)
     init_vector3 = np.dot(init_vector3, P)
 
-print(num,'번째 vector = ',init_vector1)
-print(num,'번째 vector = ',init_vector2)
-print(num,'번째 vector = ',init_vector3)
+print('vector1(rain) = ',init_vector1)
+print('vector2(sunny) = ',init_vector2)
+print('vector3(cloudy) = ',init_vector3)
